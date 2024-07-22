@@ -64,7 +64,7 @@ sms-channels: [ "aliyun", "tencent" ]
 ######## OpenAI 配置 ########
 
 # 是否启用 OpenAI
-enable-openai: true
+enable-openai: false
 
 # 是否启用 OpenAI 代理，依赖于 socks5-proxy 配置
 openai-autoproxy: false
@@ -76,10 +76,10 @@ openai-servers: [ "https://api.openai.com/v1" ]
 openai-keys: [ "sk-xxxxxxxxxxxxxxxx" ]
 
 # Azure OpenAI 服务配置
-#openai-azure: true
-#openai-apiversion: "2023-05-15"
-#openai-servers: ["https://xxxx.openai.azure.com"]
-#openai-keys: ["xxxxxxxxxxxxxxxxxxxxxxx"]
+openai-azure: true
+openai-apiversion: "2023-05-15"
+openai-servers: ["https://sunetgpt.openai.azure.com"]
+openai-keys: ["4af85c20a31b453581898d7e79b0d06c"]
 
 ######## OpenAI 备用配置 ########
 # 当主 OpenAI 访问遇到一些问题时，切换备用配置继续尝试
@@ -141,8 +141,8 @@ enable-baiduwxai: false
 # API 申请：https://dashscope.aliyun.com/
 
 # 是否启用阿里云灵积模型平台
-enable-dashscopeai: false
-#dashscope-key: ""
+enable-dashscopeai: true
+dashscope-key: "sk-f47f2eca6d794656bb5b52cf3dbdc70c"
 #dashscope-keys: []
 
 ######### 讯飞星火大语言模型 ########
